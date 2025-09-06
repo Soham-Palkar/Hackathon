@@ -15,6 +15,8 @@
         .navbar {
             background-color: var(--primary-green);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
         }
         .navbar-brand {
             font-weight: bold;
@@ -22,12 +24,16 @@
         }
         .navbar-nav .nav-link {
             color: white !important;
+            font-size: 1.2rem;   /* bigger text (default ~1rem) */
+            font-weight: 500;    /* optional: make text bolder */
+            padding-left: 1rem;  /* add spacing between links */
+            padding-right: 1rem;
         }
         .navbar-nav .nav-link:hover {
             color: var(--accent-yellow) !important;
         }
-        /* Hero Section */
-        .hero {
+        /* Hero Section
+        /* .hero {
             position: relative;
             height: 70vh;
             background: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ee04521e-e3e7-465a-a270-32c4fac2a291.png') no-repeat center center/cover;
@@ -37,7 +43,8 @@
             color: white;
             text-align: center;
             overflow: hidden;
-        }
+            /* min-height: auto; */
+        /* } */ */
         .hero::before {
             content: '';
             position: absolute;
@@ -47,7 +54,7 @@
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             z-index: 1;
-        }
+        } */
         .hero-content {
             position: relative;
             z-index: 2;
@@ -116,4 +123,44 @@
                 height: 250px;
             }
         }
-    
+
+
+.hero {
+  position: relative;
+  height: 100vh;              /* full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* behaves like background-size: cover */
+  z-index: -1;                /* send behind text */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* readability */
+  padding: 20px;
+}
+.navbar {
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+  backdrop-filter: blur(8px);     /* frosted glass blur */
+}
+.navbar .nav-link {
+  color: white !important;     /* white text */
+  font-weight: 500;
+}
+.navbar .nav-link:hover {
+  color: #ffd700 !important;   /* gold hover */
+}
+
