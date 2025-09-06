@@ -1,0 +1,119 @@
+
+        /* Eco-friendly color scheme: Greens and earth tones */
+        :root {
+            --primary-green: #228B22; /* Forest Green */
+            --secondary-brown: #8B4513; /* SaddleBrown for cultural richness */
+            --accent-yellow: #FFD700; /* Gold for highlights */
+            --light-bg: #F5FFFA; /* Mint Cream for sections */
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+        }
+        /* Header */
+        .navbar {
+            background-color: var(--primary-green);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--accent-yellow) !important;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: var(--accent-yellow) !important;
+        }
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 70vh;
+            background: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ee04521e-e3e7-465a-a270-32c4fac2a291.png') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--primary-green);
+            text-align: center;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .carousel-img {
+            height: 400px;
+            object-fit: cover;
+        }
+        /* Eco Tips Accordion */
+        .accordion-button {
+            background-color: var(--light-bg);
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary-green);
+            color: white;
+        }
+        /* Contact Form */
+        .form-control:focus {
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 0.2rem rgba(34, 139, 34, 0.25);
+        }
+        /* Footer */
+        footer {
+            background-color: var(--secondary-brown);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: var(--accent-yellow);
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                height: 50vh;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .carousel-img {
+                height: 250px;
+            }
+        }
+    

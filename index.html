@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Digital Platform for Eco & Cultural Tourism in Jharkhand</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-leaf"></i> Jharkhand Tourism Hub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#eco-tourism">Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cultural-tourism">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Trip Planner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6e72a1a0-fcfa-4947-957d-5efc6fbdf03f.png" alt="Panoramic view of lush-green forests in Jharkhand, showcasing emerald hills, serene rivers, and diverse wildlife in a vibrant green and earthy color palette with soft sunlight filtering through ancient trees." class="d-none" />
+            <h1 class="display-4 fw-bold">Discover Jharkhand's Hidden Treasures</h1>
+            <p class="lead">Your smart gateway to sustainable eco-tourism and rich cultural experiences in the heart of India.</p>
+            <a href="#eco-tourism" class="btn btn-primary btn-lg" style="background-color: var(--accent-yellow); border-color: var(--accent-yellow); color: var(--primary-green);">
+                Explore Now <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Eco Tourism Section -->
+    <section id="eco-tourism" class="container">
+        <h2 class="section-title">Eco Tourism in Jharkhand</h2>
+        <p class="text-center mb-5">Immerse yourself in Jharkhand's pristine natural wonders. From biodiversity hotspots to sustainable trekking trails, embark on eco-friendly adventures.</p>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5ad33f28-9856-4cd7-95c5-baeced655bb4.png" alt="LLUck<<" alt="Detailed environmental illustration with clean, fresh air, green trees swaying in breeze, golden sunshine, wildlife conservation, diverse Jharkhand flora, eco-friendly tourism symbols like recycled materials and sustainable paths." class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">National Parks & Wildlife</h5>
+                        <p class="card-text">Explore sanctuaries teeming with tigers, elephants, and rare bird species, promoting conservation efforts.</p>
+                        <a href="#" class="btn btn-success">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/861de90d-cf8e-46d6-862c-339cd992a535.png" alt="Biodiversity hotspot map styled illustration featuring lush grasslands, waterfalls, colorful flowers, and environmentally conscious travelers with backpacks, in earthy tones and vibrant greens." class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">Biodiversity Hotspots</h5>
+                        <p class="card-text">Discover Jharkhand's rich flora and fauna, from forests to wetlands, in harmony with nature.</p>
+                        <a href="#" class="btn btn-success">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3949c2f1-e7cc-42b8-a169-9c1732e4fb35.png" alt="Sustainable trekking path illustration with hikers on wooden trail, surrounded by tall trees, river views, and solar-powered signage highlighting eco-practices." class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">Sustainable Trails</h5>
+                        <p class="card-text">Hike eco-friendly paths that respect local ecosystems and support indigenous communities.</p>
+                        <a href="#" class="btn btn-success">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Eco Tips Accordion -->
+        <h3 class="mt-5 text-center">Eco-Friendly Travel Tips</h3>
+        <div class="accordion" id="ecoTips">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Reduce Your Carbon Footprint
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#ecoTips">
+                    <div class="accordion-body">Opt for public transport or eco-vehicles, minimize single-use plastics, and choose carbon-neutral accommodations.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Support Local Communities
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#ecoTips">
+                    <div class="accordion-body">Engage with tribal artisans, visit homestays, and purchase sustainable local products to boost the economy.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Tourism Section -->
+    <section id="cultural-tourism" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Cultural Tourism</h2>
+            <p class="text-center mb-5">Experience the vibrant tapestry of Jharkhand's indigenous cultures, festivals, and heritage sites that reflect a rich historical legacy.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4254b6d2-8f73-499a-a71e-91829b12f0af.png" alt="Traditional tribal dance illustration featuring indigenous performers in colorful attire, surrounded by earthen pots, musical instruments, and lush tribal village scenery in warm orange and green tones." class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Tribal Traditions</h5>
+                            <p class="card-text">Dive into the customs of tribes like Santhal and Oraon, known for their crafts and folklore.</p>
+                            <a href="#" class="btn btn-success">Explore Tribes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/84c2baf0-b135-4529-8c64-a8a6c6304533.png" alt="Festive celebration scene with dancers in adorned costumes, festival lights, traditional food stalls, and cultural symbols like drums and garlands in a joyful red and yellow color scheme." class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Vibrant Festivals</h5>
+                            <p class="card-text">Participate in festivals like Sarhul and Karam, celebrating nature, harvest, and community spirit.</p>
+                            <a href="#" class="btn btn-success">Festival Guide</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3a26de34-4ff8-4c9d-bc94-1f920e629662.png" alt="Heritage site architecture illustration showcasing ancient stone temples, heritage monuments with intricate carvings, and historical artifacts set against a blue sky background." class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Heritage Sites</h5>
+                            <p class="card-text">Visit archaeological wonders like Raksha Bangles and early Jain temples steeped in history.</p>
+                            <a href="#" class="btn btn-success">Site Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container">
+        <h2 class="section-title">Gallery of Wonders</h2>
+        <p class="text-center mb-5">A visual journey through Jharkhand's natural and cultural splendor.</p>
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e6887674-8788-462a-8609-9f9e99de8fac.png" alt="Awe-inspiring waterfall cascading over moss-covered rocks, with mist rising, surrounded by tropical greenery and exotic birds, capturing the essence of pure, pristine nature in a lush green environment." class="d-block w-100 carousel-img" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Majestic Waterfalls</h5>
+                        <p>Jharkhand's hidden gems of aquatic beauty.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/63f85a8e-5320-4a61-bcb6-8a7885cbdc69.png" alt="Cultural festival scene with indigenous tribes in traditional garments, performing rituals around a sacred fire, with pottery, handwoven textiles, and natural surroundings in rich cultural colors." class="d-block w-100 carousel-img" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Festival Rituals</h5>
+                        <p>Experience the soul of tribal celebrations.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/eb3d4865-efa3-4aff-a463-2960677949c7.png" alt="Wildlife sanctuary view with deer grazing in forest clearing, elephants bathing in lake, colorful birds flying, and conservation rangers monitoring the area under golden sunlight." class="d-block w-100 carousel-img" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Wildlife Sanctuaries</h5>
+                        <p>Where conservation meets adventure.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">About the Smart Platform</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Digital Innovation</h5>
+                    <p>Our platform leverages AI for personalized itineraries, VR previews, and real-time eco-impact tracking.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Sustainable Focus</h5>
+                    <p>Committed to preserving Jharkhand's ecosystems while promoting responsible tourism practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="text-center mb-5">Have questions? Planning a trip? Reach out to our team for assistance.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2023 Smart Jharkhand Tourism Platform. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            <p>Designed for sustainable and cultural exploration in Jharkhand.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS for Form Validation -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            if (name && email && message) {
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+</content>
+</create_file>
